@@ -53,16 +53,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AccordionItem.cs" />
      <Compile Include="Assets\Scripts\Acupoint.cs" />
      <Compile Include="Assets\Scripts\AcupointAtlas.cs" />
      <Compile Include="Assets\Scripts\AcupointSelect.cs" />
+     <Compile Include="Assets\Scripts\AcupoitData.cs" />
      <Compile Include="Assets\Scripts\AddAcupointButtonScript.cs" />
+     <Compile Include="Assets\Scripts\App.cs" />
      <Compile Include="Assets\Scripts\ApplicationController.cs" />
      <Compile Include="Assets\Scripts\AtlasLoader.cs" />
+     <Compile Include="Assets\Scripts\BezierPath.cs" />
+     <Compile Include="Assets\Scripts\CableCurve.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
+     <Compile Include="Assets\Scripts\DatabaseConnector.cs" />
+     <Compile Include="Assets\Scripts\DragPoint2d.cs" />
+     <Compile Include="Assets\Scripts\DragPoint3d.cs" />
      <Compile Include="Assets\Scripts\ImagesPanelUI.cs" />
+     <Compile Include="Assets\Scripts\InfoContainer.cs" />
+     <Compile Include="Assets\Scripts\Meridian.cs" />
+     <Compile Include="Assets\Scripts\MeridianData.cs" />
      <Compile Include="Assets\Scripts\Selectable.cs" />
+     <Compile Include="Assets\Scripts\SetPropertyUtility.cs" />
+     <Compile Include="Assets\Scripts\SQLite.cs" />
      <Compile Include="Assets\Scripts\UIController.cs" />
+     <Compile Include="Assets\Scripts\UIElement.cs" />
+     <Compile Include="Assets\Scripts\UIImageZoom.cs" />
+     <Compile Include="Assets\Scripts\UILineRenderer.cs" />
+     <Compile Include="Assets\Scripts\UIPrimitiveBase.cs" />
      <Compile Include="Assets\Scripts\UserController.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

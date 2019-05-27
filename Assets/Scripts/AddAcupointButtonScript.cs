@@ -24,7 +24,7 @@ public class AddAcupointButtonScript : MonoBehaviour
         // Acupoint acupoint = new Acupoint("Unnamed acupoint", "New acupoint", acupointObject);
         Acupoint acupoint = new Acupoint("Unnamed acupoint", "New acupoint", acupointObject.transform.localPosition, target);
 
-        ApplicationController.instance.GetAtlas().addToAtlas(acupoint);
+        // ApplicationController.instance.GetAtlas().addToAtlas(acupoint);
         ApplicationController.instance.SaveAtlas();
     }
 }

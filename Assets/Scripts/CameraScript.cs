@@ -20,6 +20,8 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ApplicationController.instance.mode != AppView.dim3) { return; }
+
         if (Input.GetMouseButtonDown(0)) {
             mouseStartPosition = Input.mousePosition;
         }

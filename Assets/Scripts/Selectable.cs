@@ -7,15 +7,15 @@ public class Selectable : MonoBehaviour {
 
     public virtual void Select() {
 
-        // Debug.Log("Selectable Select " + transform.name);
+        Debug.Log("Selectable Select " + transform.name);
     }
 
-    void OnDrawGizmosSelected() {
+    // void OnDrawGizmosSelected() {
 
-        if (!interactionTransform) {
-            interactionTransform = transform;
-        }
+    //     if (!interactionTransform) {
+    //         interactionTransform = transform;
+    //     }
 
-        Gizmos.DrawWireSphere(interactionTransform.position, radius);
-    }
+    //     Gizmos.DrawWireSphere(interactionTransform.position, radius);
+    // }
 }

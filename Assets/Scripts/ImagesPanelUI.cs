@@ -10,7 +10,7 @@ public class ImagesPanelUI : MonoBehaviour
     public Image m_Image;
     public Sprite m_Sprite;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update    
     void Start()
     {
         ui = UIController.instance;
@@ -23,12 +23,12 @@ public class ImagesPanelUI : MonoBehaviour
         
     }
 
-    void UpdateUI() {
+    void UpdateUI(string _name) {
 
         // Debug.Log("Update UI");
-        var name = ui.displayAcupoint.name; 
+        // var name = ui.displayAcupoint.name; 
         //Get Images
-        List<Image> images = GetImagesByName(name);
+        List<Image> images = GetImagesByName(_name);
         
         //Insert to images panel
         // foreach(var image in images) {
@@ -41,7 +41,9 @@ public class ImagesPanelUI : MonoBehaviour
     List<Image> GetImagesByName(string _name) {
 
         Debug.Log(_name);
-        var path = @"Sprites/" + _name;
+        var path = @"Sprites/" + _name + "/" + _name;
+        Debug.Log(path);
+
         var url = @"file://D:/UnityProjects/Atlas/Assets/LU2.png";
         // var im = Resourses.Load<Image>(path);
         // GetComponent<Image>().SourceImage = im;

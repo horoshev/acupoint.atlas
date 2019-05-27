@@ -8,7 +8,8 @@ public class AcupointSelect : Selectable {
     public override void Select() {
 
         base.Select();
-        ShowInfo();
+        ApplicationController.instance.acupointSelect(acupoint.id);
+        // ShowInfo();
     }
 
     // public AcupointSelect() {}
@@ -54,7 +55,7 @@ public class AcupointSelect : Selectable {
             if (UIController.instance.changed) {
                 // UIController.instance.displayAcupoint = acupoint;
                 // acupoint.render();
-                acupoint.ChangePosition(UIController.instance.displayAcupoint.position);
+                acupoint.ChangePosition(UIController.instance.displayAcupoint.pos3d);
                 UIController.instance.changed = false;
                 ApplicationController.instance.SaveAtlas();
             }
